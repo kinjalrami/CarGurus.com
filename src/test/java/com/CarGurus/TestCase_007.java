@@ -76,6 +76,7 @@ public class TestCase_007 {
 
     @After
     public void tearDown() {
+        driver.quit();
     }
 
     // TODO add test methods here.
