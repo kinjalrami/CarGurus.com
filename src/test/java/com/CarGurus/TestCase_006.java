@@ -20,9 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author RANGANI2
  */
-public class TestCase_001 {
+public class TestCase_006 {
 
-    public TestCase_001() {
+    public TestCase_006() {
     }
 
     @BeforeClass

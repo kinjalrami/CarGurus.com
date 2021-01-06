@@ -22,10 +22,10 @@ import org.openqa.selenium.support.PageFactory;
  *
  * @author RANGANI2
  */
-public class TestCase_003 {
+public class TestCase_008 {
     private static WebDriver driver;
     
-    public TestCase_003() {
+    public TestCase_008() {
     }
 
     @BeforeClass
@@ -50,7 +50,7 @@ public class TestCase_003 {
 
     @Test
     public void usedCarsSearch() throws InterruptedException {
-        TC_003PageObject po = PageFactory.initElements(driver, TC_003PageObject.class);
+        TC_008PageObject po = PageFactory.initElements(driver, TC_008PageObject.class);
         driver.get("http://www.cargurus.com");
         driver.findElement(By.xpath("//*[@id=\"heroSearch\"]/label[4]")).click();
         Thread.sleep(5000);

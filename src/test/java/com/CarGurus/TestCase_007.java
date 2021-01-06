@@ -30,10 +30,10 @@ import org.openqa.selenium.support.ui.Select;
  *
  * @author RANGANI2
  */
-public class TestCase_002 {
+public class TestCase_007 {
     private WebDriver driver;
     private static ForSaleByOwner forSale;
-    public TestCase_002() {
+    public TestCase_007() {
     }
 
     @BeforeClass

@@ -14,10 +14,10 @@ import org.openqa.selenium.support.ui.Select;
  *
  * @author RANGANI2
  */
-public class TC_003PageObject {
+public class TC_008PageObject {
     WebDriver driver;
     
-    public TC_003PageObject(WebDriver driver){
+    public TC_008PageObject(WebDriver driver){
         this.driver= driver;
     }
     
