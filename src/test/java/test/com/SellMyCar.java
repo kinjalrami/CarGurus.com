@@ -24,16 +24,17 @@ public class SellMyCar {
     private static WebDriver driver;
     private String baseUrl = "https://www.cargurus.com/";
 
-    @Given("^user is already on carguru$")
-    public void user_is_already_on_carguru() throws Throwable {
+    @Given("^user is already on Cargurupage$")
+public void user_is_already_on_Cargurupage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(baseUrl);
+        driver.manage().window().maximize();
     }
 
-    @When("^user hover over Sell My car$")
-    public void user_hover_over_Sell_My_car() throws Throwable {
+   @When("^user hovers over SellMyCar$")
+public void user_hovers_over_SellMyCar() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         driver.findElement(By.xpath("//a[contains(text(),'Sell My Car')]"));
 

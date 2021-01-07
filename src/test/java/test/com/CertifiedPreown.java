@@ -24,16 +24,17 @@ public class CertifiedPreown {
     private static WebDriver driver;
     private String baseUrl = "https://www.cargurus.com/";
 
-    @Given("^user is already on Carguru\\.com$")
-    public void user_is_already_on_Carguru_com() throws Throwable {
+   @Given("^user is already on Carguru$")
+public void user_is_already_on_Carguru_com() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(baseUrl);
+        driver.manage().window().maximize();
     }
 
-    @When("^user hover over Certified Pre-Owned$")
-    public void user_hover_over_Certified_Pre_Owned() throws Throwable {
+   @When("^user mouses over certified pre owned$")
+public void user_mouses_over_certified_pre_owned() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
 
         driver.findElement(By.xpath("//body/div[@id='main']/main[1]/div[3]/div[1]/section[1]/div[1]/div[1]/label[3]/span[1]"));

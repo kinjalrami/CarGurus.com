@@ -28,6 +28,7 @@ public void user_is_already_Signed_in() throws Throwable {
      System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
          driver = new ChromeDriver();
          driver.get(baseUrl);
+         driver.manage().window().maximize();
 }
 
 @When("^user hover over Research$")

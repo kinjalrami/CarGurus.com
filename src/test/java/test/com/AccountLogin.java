@@ -30,7 +30,7 @@ public void user_is_alredy_on_HomePage() throws Throwable {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(baseUrl);
-
+driver.manage().window().maximize();
     }
 
     @When("^title of Home Page is Carguru$")
@@ -40,8 +40,9 @@ public void user_is_alredy_on_HomePage() throws Throwable {
 
     }
 
-    @Then("^user clicks on My account button$")
-    public void user_clicks_on_My_account_button() throws Throwable {
+  
+@Then("^user clicks on My account dropdown$")
+public void user_clicks_on_My_account_dropdown() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         driver.findElement(By.id("account-menu-username")).click();
 

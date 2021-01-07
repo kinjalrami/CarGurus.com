@@ -5,7 +5,7 @@ Feature:  Carguru Login Test Feature
 Scenario: Carguru Login Scenario
 Given user is alredy on HomePage
 When title of Home Page is Carguru
-Then user clicks on My account button
+Then user clicks on My account dropdown
 Then user clicks on Sign in/Ragister button
 And user enters email address
 Then user clicks on Next button and enters Password
@@ -40,9 +40,9 @@ Then user can see Market Value
 
 
 
-Scenario: user can find Certified Pre-Owned Car
-Given user is already on Carguru.com
-When user hover over Certified Pre-Owned
+Scenario: user can see Certified Pre-Owned Cars Scenario
+Given user is already on Carguru
+When user mouses over certified pre owned
 Then user Clicks on Certified Pre-Owned
 Then user selects make and model
 Then user clicks and enters zip
@@ -51,9 +51,9 @@ Then user can see Certified Pre-Owned cars
 
 
 
-Scenario: Sell My Car Scenario
-Given user is already on carguru
-When user hover over Sell My car
+Scenario: user can use SellMyCar Scenario
+Given user is already on Cargurupage
+When user hovers over SellMyCar
 Then user clicks on Sell My Car button
 Then user enters data zip 
 Then user selects maker model year and trim
