@@ -15,7 +15,7 @@ Then user close browser
 
 
    
-Scenario: user is able to Research for car
+Scenario: user is able to Research for car Scenario
 Given user is already Signed in
 When user hover over Research button
 Then user clicks on Research button
@@ -27,7 +27,7 @@ Then user can see Research results
 
 
 
-Scenario: user can see his Car Value
+Scenario: user can see his Car Value Scenario
 Given user is already on Homepage
 When hover over Car Values
 Then user clicks on Car Values
