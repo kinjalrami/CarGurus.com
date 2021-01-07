@@ -78,7 +78,6 @@ public class TestCase_007 {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-browser-side-navigation"); 
         options.addArguments("--disable-gpu");
-        driver.get("https://www.cargurus.com/");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.cargurus.com/");
@@ -95,7 +94,7 @@ public class TestCase_007 {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void TC_002() throws InterruptedException {
+    public void TC_007() throws InterruptedException {
         
         driver.findElement(By.xpath("//*[@id=\"heroSearch\"]/label[4]")).click();
         driver.findElement(By.id("minPrice")).click();
