@@ -54,19 +54,19 @@ public class AccountLogin {
         driver.findElement(By.id("authLink")).click();
     }
 
-    @Then("^user enters \"([^\"]*)\"$")
-public void user_enters(String email) throws Throwable {
+ @Then("^user enters email address$")
+public void user_enters_email_address() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        driver.findElement(By.name("registerEmail")).sendKeys(email);
+        driver.findElement(By.name("registerEmail")).sendKeys("kohli.sumeet@ymail.com");
 
     }
 
-    @Then("^user clicks on Next button and enters \"([^\"]*)\"$")
-public void user_clicks_on_Next_button_and_enters(String password) throws Throwable {
+@Then("^user clicks on Next button and enters Password$")
+public void user_clicks_on_Next_button_and_enters_Password() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         driver.findElement(By.xpath("//button[contains(text(),'Next')]")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//input[@id='loginPassword']")).sendKeys(password);
+        driver.findElement(By.xpath("//input[@id='loginPassword']")).sendKeys("Test1234");
 
     }
 

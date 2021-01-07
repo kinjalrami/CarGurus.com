@@ -64,12 +64,12 @@ public void user_clicks_search() throws Throwable {
     
 }
 
-@Then("^user clicks zip and enters \"([^\"]*)\"$")
-public void user_clicks_zip_and_enters(String zip) throws Throwable {
+@Then("^user clicks zip and enters zip$")
+public void user_clicks_zip_and_enters_zip() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
     Thread.sleep(3000);
     WebElement e= driver.findElement(By.xpath("//body/div[@id='wrapper']/main[@id='content']/main[@id='contentBody']/div[1]/div[2]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]"));
-    e.sendKeys(zip);
+    e.sendKeys("60133");
 }
 
 @Then("^user clicks Find Deals$")

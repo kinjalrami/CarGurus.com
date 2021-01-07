@@ -62,16 +62,16 @@ public class CarValues {
         trim.selectByVisibleText("XLE");
     }
 
-    @Then("^user clicks zipcode and enters \"([^\"]*)\"$")
-public void user_clicks_zipcode_and_enters(String zip) throws Throwable {
+   @Then("^user clicks zipcode and enters zipcode$")
+public void user_clicks_zipcode_and_enters_zipcode() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        driver.findElement(By.name("carDescription.postalCode")).sendKeys(zip);
+        driver.findElement(By.name("carDescription.postalCode")).sendKeys("60133");
     }
 
-    @Then("^user clicks mileage and enters \"([^\"]*)\"$")
-public void user_clicks_mileage_and_enters(String mileage) throws Throwable {
+    @Then("^user clicks mileage and enters mileage$")
+public void user_clicks_mileage_and_enters_mileage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        driver.findElement(By.id("mileage")).sendKeys(mileage);
+        driver.findElement(By.id("mileage")).sendKeys("45000");
     }
 
     @Then("^user selects transmission and engine$")

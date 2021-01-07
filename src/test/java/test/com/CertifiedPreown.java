@@ -60,12 +60,12 @@ public class CertifiedPreown {
         e.click();
     }
 
-    @Then("^user clicks and enters \"([^\"]*)\"$")
-public void user_clicks_and_enters(String zip) throws Throwable {
+    @Then("^user clicks and enters zip$")
+public void user_clicks_and_enters_zip() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         WebElement e = driver.findElement(By.id("dealFinderZipCPOId"));
         e.click();
-        e.sendKeys(zip);
+        e.sendKeys("60133");
     }
 
     @Then("^user clicks on Search$")

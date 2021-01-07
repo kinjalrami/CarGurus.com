@@ -46,10 +46,10 @@ public class SellMyCar {
 
     }
 
-    @Then("^user enters data \"([^\"]*)\"$")
-public void user_enters_data(String zip) throws Throwable {
+    @Then("^user enters data zip$")
+public void user_enters_data_zip() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        driver.findElement(By.xpath("//body/main[@id='contentBody']/div[1]/section[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[1]/input[1]")).sendKeys(zip);
+        driver.findElement(By.xpath("//body/main[@id='contentBody']/div[1]/section[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[1]/input[1]")).sendKeys("60133");
     }
 
     @Then("^user selects maker model year and trim$")
