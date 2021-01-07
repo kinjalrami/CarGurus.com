@@ -31,14 +31,14 @@ public void user_is_already_Signed_in() throws Throwable {
          driver.manage().window().maximize();
 }
 
-@When("^user hover over Research$")
-public void user_hover_over_Research() throws Throwable {
+@When("^user hover over Research button$")
+public void user_hover_over_Research_button() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
    driver.findElement(By.xpath("//a[contains(text(),'Research')]"));
 }
 
-@Then("^user clicks on Research$")
-public void user_clicks_on_Research() throws Throwable {
+@Then("^user clicks on Research button$")
+public void user_clicks_on_Research_button() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
     driver.findElement(By.xpath("//a[contains(text(),'Research')]")).click();
 }

@@ -17,8 +17,8 @@ Then user close browser
    
 Scenario: user is able to Research for car
 Given user is already Signed in
-When user hover over Research
-Then user clicks on Research
+When user hover over Research button
+Then user clicks on Research button
 Then user selects make model and year
 Then user clicks search
 Then user clicks zip and enters zip
