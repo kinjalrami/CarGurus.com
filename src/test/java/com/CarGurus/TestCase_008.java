@@ -25,24 +25,25 @@ import org.openqa.selenium.support.PageFactory;
  * @author RANGANI2
  */
 public class TestCase_008 {
+
     private static WebDriver driver;
-    
+
     public TestCase_008() {
     }
 
     @BeforeClass
     public static void setUpClass() {
         System.setProperty("webdriver.chrome.driver", "C:\\qa\\driver\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.setPageLoadStrategy(PageLoadStrategy.NONE); 
-        options.addArguments("start-maximized"); 
-        options.addArguments("enable-automation"); 
-        options.addArguments("--no-sandbox"); 
-        options.addArguments("--disable-infobars"); 
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-browser-side-navigation"); 
-        options.addArguments("--disable-gpu");
         driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.setPageLoadStrategy(PageLoadStrategy.NONE);
+        options.addArguments("start-maximized");
+        options.addArguments("enable-automation");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-infobars");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-browser-side-navigation");
+        options.addArguments("--disable-gpu");
     }
 
     @AfterClass
@@ -57,7 +58,7 @@ public class TestCase_008 {
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
@@ -73,12 +74,12 @@ public class TestCase_008 {
         driver.findElement(By.id("dealFinderFormFSBO_0")).click();
         Thread.sleep(3000);
         driver.findElement(By.id("react-tabs-6")).click();
-        po.findUsedCars("Van", 60172 , 4, 3, 2, 35000, 75000, 6500);
-        
-        try{
-            assertEquals("Used Van for Sale in Roselle, IL - CarGurus",driver.getTitle());
+        po.findUsedCars("Van", 60172, 4, 3, 2, 35000, 75000, 6500);
+
+        try {
+            assertEquals("Used Van for Sale in Roselle, IL - CarGurus", driver.getTitle());
             System.out.println("Test Case Passed");
-        }catch(Error a){
+        } catch (Error a) {
             System.out.println(a.toString());
         }
     }

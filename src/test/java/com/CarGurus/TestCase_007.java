@@ -69,6 +69,10 @@ public class TestCase_007 {
     @Before
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:\\qa\\driver\\chromedriver.exe");//location of chromedriver defined here
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.cargurus.com/");
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         ChromeOptions options = new ChromeOptions();
         options.setPageLoadStrategy(PageLoadStrategy.NONE);
         options.addArguments("start-maximized"); 
@@ -78,16 +82,11 @@ public class TestCase_007 {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-browser-side-navigation"); 
         options.addArguments("--disable-gpu");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.cargurus.com/");
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
     }
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     // TODO add test methods here.
