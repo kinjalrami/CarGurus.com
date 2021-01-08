@@ -91,8 +91,8 @@ public void user_selects_alloy_wheels_Leather_seats_and_Sunroof_Moonroof_option(
         // Write code here that turns the phrase above into concrete actions
         Thread.sleep(3000);
         driver.findElement(By.id("wheelOption-6")).click();
-        driver.findElement(By.xpath("//label[contains(text(),'Leather Seats')]")).click();
-        driver.findElement(By.xpath("//label[contains(text(),'Sunroof/Moonroof')]")).click();
+        driver.findElement(By.id("generalOption-1")).click();
+        driver.findElement(By.id("generalOption-2")).click();
     }
 
     @Then("^user can see Market Value$")
