@@ -10,6 +10,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -89,7 +90,8 @@ public void user_clicks_mileage_and_enters_mileage() throws Throwable {
     @Then("^user selects alloy wheels Leather seats and Sunroof/Moonroof option$")
 public void user_selects_alloy_wheels_Leather_seats_and_Sunroof_Moonroof_option() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        Thread.sleep(3000);
+        JavascriptExecutor jse= (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollTo(0,1000)");
         driver.findElement(By.id("wheelOption-6")).click();
         driver.findElement(By.id("generalOption-1")).click();
         driver.findElement(By.id("generalOption-2")).click();
