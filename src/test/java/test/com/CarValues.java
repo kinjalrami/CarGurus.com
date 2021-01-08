@@ -24,8 +24,8 @@ public class CarValues {
     private static WebDriver driver;
     private String baseUrl = "https://www.cargurus.com/";
 
-   @Given("^user is already on Homepage$")
-public void user_is_already_on_Homepage() throws Throwable {
+   @Given("^user is already on Cargurus$")
+public void user_is_already_on_Cargurus() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
