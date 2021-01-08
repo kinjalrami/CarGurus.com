@@ -46,7 +46,7 @@ public void user_clicks_on_Research_button() throws Throwable {
 @Then("^user selects make model and year$")
 public void user_selects_make_model_and_year() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
-    Thread.sleep(5000);
+    Thread.sleep(3000);
      WebElement e = driver.findElement(By.id("researchTabCarSelector_entitySelectingHelper_selectedEntity_makerSelect"));
         Select make = new Select(e);
         make.selectByVisibleText("Honda");
