@@ -13,9 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  *
@@ -24,7 +22,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Research {
     private static WebDriver driver;
     private String baseUrl="https://www.cargurus.com/";
-    @Given("^user is on Carguru$")
+  @Given("^user is on Carguru$")
 public void user_is_on_Carguru() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
      System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
@@ -42,14 +40,13 @@ public void user_hover_over_Research_button() throws Throwable {
 @Then("^user clicks on Research button$")
 public void user_clicks_on_Research_button() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
-     WebDriverWait wait=new WebDriverWait(driver, 20);
-wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"headerNav\"]/div/ul[1]/li[6]/a")));
-    driver.findElement(By.xpath("//*[@id=\"headerNav\"]/div/ul[1]/li[6]/a")).click();
+    driver.findElement(By.xpath("//a[contains(text(),'Research')]")).click();
 }
 
 @Then("^user selects make model and year$")
 public void user_selects_make_model_and_year() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
+    Thread.sleep(5000);
      WebElement e = driver.findElement(By.id("researchTabCarSelector_entitySelectingHelper_selectedEntity_makerSelect"));
         Select make = new Select(e);
         make.selectByVisibleText("Honda");
