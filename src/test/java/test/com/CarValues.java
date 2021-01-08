@@ -89,6 +89,7 @@ public void user_clicks_mileage_and_enters_mileage() throws Throwable {
     @Then("^user selects alloy wheels Leather seats and Sunroof/Moonroof option$")
 public void user_selects_alloy_wheels_Leather_seats_and_Sunroof_Moonroof_option() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
+        Thread.sleep(10000);
         driver.findElement(By.id("wheelOption-6")).click();
         driver.findElement(By.xpath("//label[contains(text(),'Leather Seats')]")).click();
         driver.findElement(By.xpath("//label[contains(text(),'Sunroof/Moonroof')]")).click();

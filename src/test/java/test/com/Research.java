@@ -40,6 +40,7 @@ public void user_hover_over_Research_button() throws Throwable {
 @Then("^user clicks on Research button$")
 public void user_clicks_on_Research_button() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
+    Thread.sleep(10000);
     driver.findElement(By.xpath("//a[contains(text(),'Research')]")).click();
 }
 
