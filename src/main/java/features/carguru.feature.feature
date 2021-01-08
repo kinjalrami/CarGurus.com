@@ -15,16 +15,6 @@ Then user close browser
 
 
    
-Scenario: user is able to Research for car Scenario
-Given user is on Carguru
-When user hover over Research button
-Then user clicks on Research button
-Then user selects make model and year
-Then user clicks search
-Then user clicks zip and enters zip
-Then user clicks Find Deals
-Then user can see Research results
-
 
 
 Scenario: user can see his Car Value Scenario
