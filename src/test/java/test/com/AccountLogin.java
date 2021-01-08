@@ -24,8 +24,8 @@ public class AccountLogin {
     private static WebDriver driver;
     private String baseUrl = "https://www.cargurus.com/";
 
-   @Given("^user is alredy on HomePage$")
-public void user_is_alredy_on_HomePage() throws Throwable {
+   @Given("^user is alredy on Cargurus$")
+public void user_is_alredy_on_Cargurus() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();

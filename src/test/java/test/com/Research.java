@@ -22,8 +22,8 @@ import org.openqa.selenium.support.ui.Select;
 public class Research {
     private static WebDriver driver;
     private String baseUrl="https://www.cargurus.com/";
-    @Given("^user is already Signed in$")
-public void user_is_already_Signed_in() throws Throwable {
+    @Given("^user is on carguru Homepage$")
+public void user_is_on_carguru_Homepage() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
      System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
          driver = new ChromeDriver();

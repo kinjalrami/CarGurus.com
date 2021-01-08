@@ -3,7 +3,7 @@
 #----------------------------------
 Feature:  Carguru Login Test Feature
 Scenario: Carguru Login Scenario
-Given user is alredy on HomePage
+Given user is alredy on Cargurus
 When title of Home Page is Carguru
 Then user clicks on My account dropdown
 Then user clicks on Sign in/Ragister button
@@ -16,7 +16,7 @@ Then user close browser
 
    
 Scenario: user is able to Research for car Scenario
-Given user is already Signed in
+Given user is on carguru Homepage
 When user hover over Research button
 Then user clicks on Research button
 Then user selects make model and year
@@ -35,7 +35,7 @@ Then user selects make model year and trim
 Then user clicks zipcode and enters zipcode
 Then user clicks mileage and enters mileage
 Then user selects transmission and engine
-Then user clicks alloy Leather seats and Sunroof/Moonroof
+Then user selects alloy wheels Leather seats and Sunroof/Moonroof option
 Then user can see Market Value
 
 
@@ -52,7 +52,7 @@ Then user can see Certified Pre-Owned cars
 
 
 Scenario: user can use SellMyCar Scenario
-Given user is already on Cargurupage
+Given user is already on Carguru Page
 When user hovers over SellMyCar
 Then user clicks on Sell My Car button
 Then user enters data zip 
