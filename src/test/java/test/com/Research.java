@@ -24,8 +24,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Research {
     private static WebDriver driver;
     private String baseUrl="https://www.cargurus.com/";
-    @Given("^user is on carguru Carguru$")
-public void user_is_on_carguru_Carguru() throws Throwable {
+    @Given("^user is on Carguru$")
+public void user_is_on_Carguru() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
      System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
          driver = new ChromeDriver();
@@ -43,8 +43,8 @@ public void user_hover_over_Research_button() throws Throwable {
 public void user_clicks_on_Research_button() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
      WebDriverWait wait=new WebDriverWait(driver, 20);
-wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Research')]")));
-    driver.findElement(By.xpath("//a[contains(text(),'Research')]")).click();
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"headerNav\"]/div/ul[1]/li[6]/a")));
+    driver.findElement(By.xpath("//*[@id=\"headerNav\"]/div/ul[1]/li[6]/a")).click();
 }
 
 @Then("^user selects make model and year$")

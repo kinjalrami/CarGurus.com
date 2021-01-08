@@ -16,7 +16,7 @@ Then user close browser
 
    
 Scenario: user is able to Research for car Scenario
-Given user is on carguru Carguru
+Given user is on Carguru
 When user hover over Research button
 Then user clicks on Research button
 Then user selects make model and year
