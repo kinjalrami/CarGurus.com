@@ -13,7 +13,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  *
@@ -40,7 +42,8 @@ public void user_hover_over_Research_button() throws Throwable {
 @Then("^user clicks on Research button$")
 public void user_clicks_on_Research_button() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
-    Thread.sleep(10000);
+     WebDriverWait wait=new WebDriverWait(driver, 20);
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Research')]")));
     driver.findElement(By.xpath("//a[contains(text(),'Research')]")).click();
 }
 
