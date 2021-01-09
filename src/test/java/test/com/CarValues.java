@@ -10,7 +10,6 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -49,6 +48,7 @@ public void user_is_already_on_Cargurus() throws Throwable {
     @Then("^user selects make model year and trim$")
     public void user_selects_make_model_year_and_trim() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
+        Thread.sleep(5000);
         WebElement e = driver.findElement(By.id("carPicker_makerSelect"));
         Select make = new Select(e);
         make.selectByVisibleText("Toyota");
