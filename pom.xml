@@ -23,6 +23,9 @@
             <include>test.com</include>         
         </includes>
     </configuration>
+            </plugin>
+        </plugins>
+    </build>
     
     <dependencies>
         <dependency>

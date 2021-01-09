@@ -41,7 +41,7 @@ Then user can see Certified Pre-Owned cars
 
 
 Scenario: user can use SellMyCar Scenario
-Given user is on Cargurus
+Given user is on Carguru
 When user hovers over SellMyCar
 Then user clicks on Sell My Car button
 Then user enters data zip 
