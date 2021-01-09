@@ -3,7 +3,7 @@
 #----------------------------------
 Feature:  Carguru Login Test Feature
 Scenario: Carguru Login Scenario
-Given user is alredy on Cargurus
+Given user is alredy on Carguru
 When title of Home Page is Carguru
 Then user clicks on My account dropdown
 Then user clicks on Sign in/Ragister button
@@ -18,7 +18,7 @@ Then user close browser
 
 
 Scenario: user can see his Car Value Scenario
-Given user is already on Cargurus
+Given user is already on carguru
 When hover over Car Values
 Then user clicks on Car Values
 Then user selects make model year and trim
