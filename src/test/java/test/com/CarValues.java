@@ -87,15 +87,6 @@ public void user_clicks_mileage_and_enters_mileage() throws Throwable {
         engineId.selectByVisibleText("2.5L 178 hp I4");
     }
 
-    @Then("^user selects alloy wheels Leather seats and Sunroof/Moonroof option$")
-public void user_selects_alloy_wheels_Leather_seats_and_Sunroof_Moonroof_option() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        JavascriptExecutor jse= (JavascriptExecutor)driver;
-        jse.executeScript("window.scrollTo(0,1000)");
-        driver.findElement(By.id("wheelOption-6")).click();
-        driver.findElement(By.id("generalOption-1")).click();
-        driver.findElement(By.id("generalOption-2")).click();
-    }
 
     @Then("^user can see Market Value$")
     public void user_can_see_Market_Value() throws Throwable {

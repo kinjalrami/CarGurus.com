@@ -25,7 +25,6 @@ Then user selects make model year and trim
 Then user clicks zipcode and enters zipcode
 Then user clicks mileage and enters mileage
 Then user selects transmission and engine
-Then user selects alloy wheels Leather seats and Sunroof/Moonroof option
 Then user can see Market Value
 
 
