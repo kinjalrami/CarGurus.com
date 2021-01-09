@@ -20,7 +20,9 @@ import org.junit.runner.RunWith;
  * @author kohli
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"} ,
+@CucumberOptions(plugin = {"html:target/cucumber-html-report",
+    "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
+    "junit:target/cucumber-results.xml"},
         features="C:/Users/kohli/OneDrive/Documents/NetBeansProjects/CarguruLogin/src/main/java/features/",
         dryRun = false
 )
